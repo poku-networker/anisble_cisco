@@ -1,7 +1,8 @@
 ---
 - name: Generate Cisco IOS OS Report
   hosts: "{{ cisco_router }}"
-  connection: local
+  connection: network_cli
+  port: 22
   gather_facts: no
 
   tasks:
