@@ -1,5 +1,5 @@
 [cisco]
-cisco_ios ansible_host=192.168.1.15 ansible_user=sultan ansible_password=12345
+cisco_ios ansible_host=192.168.1.15
 
 [cisco:vars]
 ansible_connection=network_cli
