@@ -1,5 +1,6 @@
 [cisco]
 cisco_ios ansible_host=192.168.1.15
+cisco_ios ansible_host=192.168.1.16
 
 [cisco:vars]
 ansible_connection=network_cli
