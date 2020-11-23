@@ -3,10 +3,16 @@
   hosts: "{{ cisco_router }}"
   connection: network_cli
   gather_facts: no
+  
+  vars:
+    cli:
+      username: sultan
+      password: 12345
 
   tasks:
     - name: run multiple commands on remote nodes
       ios_command:
+        provider: "{{ cli }}"
         authorize: yes
         commands:
           - show ip int br
